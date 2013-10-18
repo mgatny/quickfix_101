@@ -6,6 +6,7 @@ Makefile.in
 aclocal.m4
 app
 mdsim
+executor
 autom4te.cache/
 configure
 config.h
