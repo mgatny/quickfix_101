@@ -14,6 +14,17 @@ simulate an order/execution session, and we use a simple market data simulator
 
 See QuickFIX101.pdf for the slides from the presentation.
 
+Prerequisites
+-------------
+
+You will need QuickFIX installed in order to build this project.  If you are
+using ubuntu, you can use the version that is available in apt:
+
+    sudo apt-get install libquickfix-dev
+
+See http://quickfixengine.org/download to install from source on other
+platforms.
+
 Build
 -----
 
