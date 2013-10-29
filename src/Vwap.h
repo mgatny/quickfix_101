@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VWAP_H_
+#define VWAP_H_
 
 #include <list>
 
@@ -23,3 +24,5 @@ class Vwap
     const std::size_t numTradesPerPeriod_;
     std::list<Trade> trades_;
 };
+
+#endif  // VWAP_H_

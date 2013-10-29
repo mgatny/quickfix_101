@@ -1,4 +1,5 @@
-#pragma once
+#ifndef WORKSPACE_H_
+#define WORKSPACE_H_
 
 #include <string>
 #include <iostream>
@@ -62,3 +63,4 @@ class Workspace : public FIX::Application,
 
 std::ostream & operator<<(std::ostream & out, const Workspace::Side & side);
 
+#endif  // WORKSPACE_H_

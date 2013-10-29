@@ -1,4 +1,5 @@
-#pragma once
+#ifndef IDHELPER_H_
+#define IDHELPER_H_
 
 #include <string>
 #include <quickfix/Mutex.h> // borrowing qf's mutex for convenience
@@ -26,3 +27,5 @@ class IdHelper
     int mdRequestId_;
     int orderId_;
 };
+
+#endif  // IDHELPER_H_

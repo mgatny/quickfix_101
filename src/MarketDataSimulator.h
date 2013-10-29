@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MARKETDATASIMULATOR_H_
+#define MARKETDATASIMULATOR_H_
 
 #include <string>
 #include <iostream>
@@ -32,13 +33,12 @@ private: // quickfix callbacks:
 	void fromApp(const FIX::Message& message, const FIX::SessionID& sessionID) throw(FIX::FieldNotFound, FIX::IncorrectDataFormat, FIX::IncorrectTagValue, FIX::UnsupportedMessageType);
 	void onMessage(const FIX42::MarketDataRequest& msg, const FIX::SessionID&);
 
-private:
     bool buildLastTradeMessage(FIX::Message & msg);
-	
+
     FIX::MessageStoreFactory * pMessageStoreFactory_;
-	FIX::FileLogFactory * pLogFactory_;
-	FIX::SessionSettings * pSessionSettings_;
-	FIX::SocketAcceptor * pAcceptor_;
+    FIX::FileLogFactory * pLogFactory_;
+    FIX::SessionSettings * pSessionSettings_;
+    FIX::SocketAcceptor * pAcceptor_;
     FIX::Mutex mutex_;
     FIX::SessionID sessionId_;
     FIX::Symbol symbol_;
@@ -48,3 +48,4 @@ private:
     int pxVelocity_;
 };
 
+#endif  // MARKETDATASIMULATOR_H_

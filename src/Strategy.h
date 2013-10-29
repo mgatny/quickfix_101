@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STRATEGY_H_
+#define STRATEGY_H_
 
 #include "Workspace.h"
 #include "Position.h"
@@ -52,3 +53,4 @@ class VwapStrategy : public Strategy
     Vwap vwap_;
 };
 
+#endif  // STRATEGY_H_
