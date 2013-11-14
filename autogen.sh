@@ -1,7 +1,6 @@
 #!/bin/sh
 
-rm -rf *.cache config
-mkdir config
+rm -rf *.cache
 
 touch README.md NEWS AUTHORS INSTALL ChangeLog
 [ -L README ] || ln -s README.md README
