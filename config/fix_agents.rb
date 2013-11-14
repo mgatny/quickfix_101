@@ -1,4 +1,8 @@
-AgentFIX.session_defaults.merge! BeginString: "FIX.4.2", SocketConnectHost: "localhost"
+AgentFIX.session_defaults.merge!(
+    BeginString: "FIX.4.2",
+    SocketConnectHost: "localhost",
+    DataDictionary: "etc/FIX42.xml"
+)
 
 AgentFIX.define_acceptor :marketdata do |a|
     a.default = { SenderCompID: "MARKETDATA", SocketAcceptPort: 5002 }
