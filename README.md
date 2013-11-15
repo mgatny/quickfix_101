@@ -14,9 +14,10 @@ simulate an order/execution session, and we use a simple market data simulator
 
 See QuickFIX101.pdf for the slides from the presentation.
 
-The addition of Cucumber testing using the `agent_fix` and `fix_spec` gems was
-presented at the Chicago FinTech Open Source meetup on 2013-11-14, also hosted
-by Connamara Systems.  See below for instructions for running the tests.
+The addition of Cucumber testing using the [agent_fix](https://github.com/connamara/agent_fix)
+and [fix_spec](https://github.com/connamara/fix_spec) gems was presented at the Chicago FinTech
+Open Source meetup on 2013-11-14, also hosted by Connamara Systems.  See below for instructions
+for running the tests.
 
 
 Prerequisites
