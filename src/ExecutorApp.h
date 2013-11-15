@@ -19,8 +19,8 @@
 **
 ****************************************************************************/
 
-#ifndef EXECUTOR_APPLICATION_H
-#define EXECUTOR_APPLICATION_H
+#ifndef EXECUTORAPP_H_
+#define EXECUTORAPP_H_
 
 #include "quickfix/Application.h"
 #include "quickfix/MessageCracker.h"

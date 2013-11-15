@@ -1,4 +1,5 @@
-#pragma once
+#ifndef POSITION_H_
+#define POSITION_H_
 
 #include <string>
 #include <iostream>
@@ -42,3 +43,5 @@ protected:
 };
 
 std::ostream & operator<<(std::ostream & out, const Position &);
+
+#endif  // POSITION_H_
