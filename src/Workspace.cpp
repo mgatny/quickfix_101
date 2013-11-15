@@ -119,6 +119,7 @@ void Workspace::toAdmin( FIX::Message& message, const FIX::SessionID& sessionId)
 		if(pSettings->has("MyPassword"))
 		{
 			message.setField(FIX::RawData(pSettings->getString("MyPassword")));
+			message.setField(FIX::RawDataLength(pSettings->getString("MyPassword").size()));
 		}
 		else
 		{

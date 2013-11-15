@@ -14,6 +14,7 @@ simulate an order/execution session, and we use a simple market data simulator
 
 See QuickFIX101.pdf for the slides from the presentation.
 
+
 Prerequisites
 -------------
 
@@ -25,6 +26,7 @@ using ubuntu, you can use the version that is available in apt:
 See http://quickfixengine.org/download to install from source on other
 platforms.
 
+
 Build
 -----
 
@@ -33,6 +35,17 @@ The example code builds in the usual way with autotools:
     ./autogen.sh
     ./configure
     make
+
+
+Acceptance Tests
+----------------
+
+If you would like to run the acceptance tests, run:
+
+    rvm use jruby
+    bundle install
+    bundle exec cucumber
+
 
 Run
 ---
