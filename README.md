@@ -41,16 +41,6 @@ The example code builds in the usual way with autotools:
     make
 
 
-Acceptance Tests
-----------------
-
-If you would like to run the acceptance tests, run:
-
-    rvm use jruby
-    bundle install
-    bundle exec cucumber
-
-
 Run
 ---
 
@@ -65,4 +55,16 @@ Start our market data simulator:
 Start our strategy app:
 
     ./app etc/app.cfg AAPL
+    
 
+Acceptance Tests
+----------------
+
+If you would like to run the acceptance tests, run:
+
+    rvm use jruby
+    bundle install
+    bundle exec cucumber
+
+Make sure that `executor`, `mdsim`, and `app` are *not* running when you run
+`cucumber`, otherwise they will interfere with the test.
