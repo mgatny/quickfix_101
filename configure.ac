@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.69])
+AC_PREREQ([2.63])
 AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
 AC_CONFIG_SRCDIR([src/Strategy.h])
 AC_CONFIG_HEADERS([config.h])
@@ -18,7 +18,6 @@ AC_PROG_CC
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_SIZE_T
-AC_CHECK_HEADER_STDBOOL
 
 # Checks for library functions.
 
