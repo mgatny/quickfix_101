@@ -1,14 +1,15 @@
 language: cpp
 
-rvm:
-  -jruby
+ruby: jruby
 
 compiler:
  - gcc
  - clang
 
 before_script:
+ - rvm install jruby
+ - bundle install
  - sudo apt-get install libquickfix-dev
  - ./autogen.sh
 
-script: ./configure && make && bundle install && bundle exec cucumber
+script: ./configure && make && bundle exec cucumber
