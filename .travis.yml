@@ -7,7 +7,8 @@ compiler:
 
 before_script:
  - rvm install jruby
- - rvm use jruby && gem update --system && bundle install
+ - rvm use jruby && gem install bundler -v "$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1)"
+ - rvm use jruby && bundle install
  - sudo apt-get install libquickfix-dev
  - ./autogen.sh
 
