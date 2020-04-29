@@ -1,4 +1,5 @@
 *.o
+compile
 .deps/
 src/.deps/
 Makefile
