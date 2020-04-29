@@ -11,4 +11,4 @@ before_script:
  - sudo apt-get install libquickfix-dev
  - ./autogen.sh
 
-script: ./configure && make && bundle exec cucumber
+script: ./configure && make && bundle install && bundle exec cucumber
