@@ -7,7 +7,7 @@ compiler:
 
 before_script:
  - rvm install jruby
- - rvm use jruby && jgem install bundler && bundle install
+ - rvm use jruby && gem update --system && bundle install
  - sudo apt-get install libquickfix-dev
  - ./autogen.sh
 
