@@ -1,5 +1,5 @@
-QuickFIX 101
-------------
+QuickFIX 101 [![Build Status](https://travis-ci.org/mgatny/quickfix_101.svg?branch=master)](https://travis-ci.org/mgatny/quickfix_101)
+---------------------------
 
 This example quickfix app was presented at the Chicago FinTech Open Source
 meetup on 2013-10-16, hosted by Connamara Systems.
