@@ -18,7 +18,7 @@ Open Source meetup on 2013-11-14, also hosted by Connamara Systems.  See below f
 for running the tests.
 
 See [QuickFIX101.pdf](https://github.com/mgatny/quickfix_101/blob/master/QuickFIX101.pdf)
-for the slides from the meetup presentation.
+for the slides from the meetup presentation, or view them on [Speaker Deck](https://speakerdeck.com/mgatny/chicago-fintech-open-source-meetup-quickfix-101).
 
 
 Prerequisites
