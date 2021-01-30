@@ -1,4 +1,4 @@
-AM_CXXFLAGS = -Wall -std=c++11
+AM_CXXFLAGS = -Wall -std=c++0x
 
 nobase_include_HEADERS = \
     src/ExecutorApp.h    \
